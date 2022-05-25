@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $HOME
+export PATH=$PATH:root
