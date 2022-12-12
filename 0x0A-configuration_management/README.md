@@ -10,3 +10,7 @@ In this project, I started working with Puppet as a configuration management too
     * File group: www-data .
     * File owner: www-data .
     * File content: I love Puppet .
+
+* **1. Install a package**
+  * [1-install_a_package.pp](./1-install_a_package.pp): Puppet manifest file that install flask from pip3.
+
