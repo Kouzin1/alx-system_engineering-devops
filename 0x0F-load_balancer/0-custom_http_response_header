@@ -9,18 +9,18 @@
 #+	The value of the HTTP header is the hostname of the running server.
 
 apt-get update
-apt-get instal -y nginx
+apt-get install -y nginx
 
 mkdir -p /var/www/html
 touch /var/www/html/index.html
 echo "Hello world" > /var/www/html/index.html
-touh /var/www/html/404.html
-echo 'Ceci n'est pas une page" > /var/www/html/404.html
+touch /var/www/html/404.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
 
 printf %s "server {
 	listen 80 default_server;
 	listen[::]:80 default_server;
-	add_header x-served-bt $HOSTNAME;
+	add_header x-Served-By $HOSTNAME;
 	root   /var/www/html;
 	index index.html
 
@@ -29,11 +29,10 @@ printf %s "server {
 	}
 
 	error_page 404 /404.html;
-	location /404
-		root /var/www/
+	location /404 {
+		root /var/www/html;
 		internal;
 	}
-}" > etc/ngin/sites-available/default
+}" > etc/nginx/sites-available/default
 
-servib again restart
-}
+service again restart
