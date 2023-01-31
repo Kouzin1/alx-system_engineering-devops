@@ -5,6 +5,11 @@ working with the the Reddit API.
 
 ## Tests :heavy_check_mark:
 
-* [tests](./tests): Folder of test files for all tasks. Provided by ALX.
-
 ## Function Protypes :floppy_disk:
+
+Prototypes for functions written in this project:
+
+| File		| Protypes				|
+|-------------- | --------------------------------------|
+|`0-subs.py`	| `def number_of_subscribers(subreddit)`|
+|`1-top_ten.py`	| `def top_ten(subreddit)`		|
