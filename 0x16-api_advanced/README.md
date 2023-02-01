@@ -32,3 +32,14 @@ Prototypes for functions written in this project:
   * [2-recursive.py](./2-recursive.py): Python function that recursively returns a
   list of titles for all hot articles on a given subreddit.
   * Returns `None` if no results are found on the given subreddit.
+
+* **3. Count it!**
+  * [100-count.py](./100-count.py): Python function that recursively prints a
+  sorted countof given keywords parsed from titles of all hot articles on a given
+  subreddit.
+  * Keywords are case-insensitive and delimited by spaces.
+  * Results are printed in descending order by count.
+  * Words with identical counts are sorted alphabetically.
+  * Words with no matches are skipped.
+  * Results are based on the number of times a keyword appears - i.e
+   `java java java` counts as three separate instances of `java`.
